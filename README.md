@@ -5,7 +5,7 @@ Trabalhos executados por Rodrigo Martins durante o curso de Design de Moda.
 O controle das tarefas desse projeto será realizado no Github.
 
 ## Ícones
-- 📦 :nova funcionalidade
-- ⬆️ :atualização
-- 🪲 :correção de bug
-- 🏁 :release
+- 📦: nova funcionalidade
+- ⬆️: atualização
+- 🪲: correção de bug
+- 🏁: release

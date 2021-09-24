@@ -21,7 +21,7 @@
         <span>fechar</span>
     </div>
 
-    <header>
+    <header id="home">
         <div class="img-wrapper">
             <img src="img/bg.jpg" alt="imagem de novelos de lã">
         </div>
@@ -35,11 +35,11 @@
     <aside class="sidebar">
         <nav>
             <ul class="menu">
-                <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimento</a></li>
+                <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
             </ul>
             <div class="social-media">
                 <a href=""><i class="fab fa-facebook"></i></a>
@@ -49,7 +49,7 @@
         </nav>
     </aside>
 
-    <section class="sessao-conhecimentos">
+    <section class="sessao-conhecimentos" id="conhecimento">
         <div class="sessao-header">
             <h1>Conhecimentos</h1>
         </div>
@@ -109,11 +109,10 @@
                 </div>
             </div>
             <div class="conhecimento-img-wrapper">
-                <img src="img/conhecimento.jpg" alt="clipes de metal">
+                <img src="img/conhecimento.jpg" alt="figuras geometricas">
             </div>
         </div>
     </section>
-
     <section class="sessao-projetos" id="projetos">
         <div class="sessao-header">
             <h1>Projetos</h1>
@@ -156,12 +155,12 @@
                 <div class="card-img-wrapper">
                     <img src="img/proj1.jpg" alt="esboço mulher"/>
                 </div>
-            </div>
-            <div class="card-info">
-                <h2>Desenho de moda</h2>
-                <h3>Trabalho de criação</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam doloribus eos consequatur expedita architecto hic?</p>
-                <button class="btn">Saiba Mais</button>
+                <div class="card-info">
+                    <h2>Desenho de moda</h2>
+                    <h3>Trabalho de criação</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam doloribus eos consequatur expedita architecto hic?</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
             </div>
         </div>
     </section>
@@ -189,19 +188,19 @@
             </div>
         </div>
     </section>
-    <section class="sessao-orcamento">
+    <section class="sessao-orcamento" id="orcamento">
         <div class="orcamento-wrapper">
             <h1>Faça um orçamento</h1>
             <form>
                 <label>Preciso de um desenho</label>
                 <div class="group-layout">
                     <div>
-                        <input type="radio" name="layout" id="layout-nao">
-                        <label for="layout-nao">Não tenho referência</label>
+                        <input type="radio" name="referencia" id="refNao">
+                        <label for="refNao">Não tenho referência</label>
                     </div>
                     <div>
-                        <input type="radio" name="layout" id="layout-sim">
-                        <label for="layout-nao">Tenho uma referência</label>
+                        <input type="radio" name="referencia" id="refSim">
+                        <label for="refSim">Tenho uma referência</label>
                     </div>
                 </div>
                 <label for="colorido">Preciso que seja colorido</label>
@@ -209,12 +208,27 @@
                 <label for="qtde">Qtde de Desenhos</label>
                 <input type="number" min="1" max="10" name="qtde" id="qtde">
                 <label for="prazo">Prazo</label>
-                <input type="range" name="prazo" id="prazo">
+                <input type="range" name="prazo" id="prazo" min="1" max="7">
+                <label id="preco">0,00€</label>
                 <button class="btn btn-orcamento" type="submit">Enviar</button>
             </form>
         </div>
     </section>
-    
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2021, Marcelo Nicacio - Todos os direitos reservados.</p>
+            <div class="social-list">
+              <ul>
+                  <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
 <script src="script.js"></script>
 </html>
